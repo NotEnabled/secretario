@@ -1,0 +1,71 @@
+@import url("bootstrap/bootstrap.min.css");
+@import url("fonts/fonts.css");
+
+@import url("blocks/button/button.css");
+@import url("blocks/button/_color/button_color_blue.css");
+@import url("blocks/button/_color/button_color_grey.css");
+
+@import url("blocks/desc/desc.css");
+@import url("blocks/desc/__header/desc__header.css");
+@import url("blocks/desc/__text/desc__text.css");
+
+@import url("blocks/field/field.css");
+@import url("blocks/field/__label/field__label.css");
+@import url("blocks/field/_mg/field_mg_lg.css");
+@import url("blocks/field/_mg/field_mg_sm.css");
+@import url("blocks/field/_size/field_size_sh.css");
+
+
+@import url("blocks/header/header.css");
+@import url("blocks/header/__up/header__up.css");
+@import url("blocks/header/__subtitle-text/header__subtitle-text.css");
+@import url("blocks/header/__subtitle/header__subtitle.css");
+@import url("blocks/header/__title/header__title-text.css");
+
+
+@import url("blocks/nav-but/nuv-but.css");
+
+
+@import url("blocks/quest/quest.css");
+@import url("blocks/quest/__answer-block/quest__answer-block.css");
+@import url("blocks/quest/__answer-item/quest__answer-item.css");
+@import url("blocks/quest/__answer-label/quest__answer-label.css");
+@import url("blocks/quest/__checkbox/quest__checkbox.css");
+@import url("blocks/quest/__label/quest__label.css");
+@import url("blocks/quest/__label-text/quest__label-text.css");
+
+@import url("blocks/root/root.css");
+@import url("blocks/select-ctrl/select-ctrl.css");
+
+
+@import url("blocks/signer/signer.css");
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.form-check-input[type="radio"] {
+    border-radius: .25em;
+}
+
+.form-check-input:checked[type="radio"] {
+    _background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='%23fff'/></svg>");
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}

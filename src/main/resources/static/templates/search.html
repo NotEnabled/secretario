@@ -1,0 +1,29 @@
+<div>
+  <div class="row desc">
+    <div class="col text-center"><p class="desc__text">Мы рады, что Вы выбрали зарплатный проект Газпромбанка</p></div>
+  </div>
+  <div class="row justify-content-center field field_mg_lg">
+    <div class="col field_size_sh"><input class="form-control select-ctrl" ng-model="ctrl.data.searchStr" type="number"></div>
+    <div class="w-100"></div>
+    <div class="col field_size_sh"><label class="form-label field__label text-center">Для заполнения зарплатного
+      договора введите ИНН или ОГРН</label></div>
+  </div>
+
+  <div class="row justify-content-center field field_mg_lg">
+    <div class="col field_size_sh">
+      <select class="form-select select-ctrl" type="text" ng-model="ctrl.data.region">
+        <option selected>Выберите одно из</option>
+        <option class="select-ctrl" ng-repeat="item in ctrl.regionList">{{item}}</option>
+      </select>
+    </div>
+    <div class="w-100"></div>
+    <div class="col field_size_sh"><label class="form-label field__label text-center">Выберите регион местонахождения
+      Вашей организации</label></div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <button class="btn btn-primary w-100 button button_color_blue" ng-click="ctrl.runSearch();" type="button">Далее</button>
+    </div>
+  </div>
+</div>

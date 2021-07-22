@@ -1,0 +1,5 @@
+.quest__answer-item{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 6px;
+}

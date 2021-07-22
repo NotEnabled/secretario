@@ -1,0 +1,29 @@
+<div>
+  <div class="row desc">
+    <div class="col text-center"><p class="desc__text">Подписант с правом подписи по Доверенности</p></div>
+  </div>
+  <div class="row justify-content-center field field_mg_sm">
+    <div class="col-sm-10 col"><input class="form-control" ng-model="ctrl.data.fio" type="text"></div>
+    <div class="w-100"></div>
+    <div class="col-sm-10 col text-center"><label class="form-label field__label">Ф.И.О.</label></div>
+  </div>
+  <div class="row justify-content-center field field_mg_sm">
+    <div class="col-sm-10 col"><input class="form-control" ng-model="ctrl.data.doveren" type="text"></div>
+    <div class="w-100"></div>
+    <div class="col-sm-10 col text-center"><label class="form-label field__label">Доверенность</label></div>
+  </div>
+  <div class="row justify-content-center field field_mg_sm">
+    <div class="col-sm-10 col"><input class="form-control" ng-model="ctrl.data.doverenDate" type="text"></div>
+    <div class="w-100"></div>
+    <div class="col-sm-10 col text-center"><label class="form-label field__label">Дата выдачи Доверенности</label></div>
+  </div>
+  <!--<div class="row justify-content-center field field_mg_sm">
+    <div class="col-sm-10 col"><input class="form-control" type="text"></div>
+    <div class="w-100"></div>
+    <div class="col-sm-10 col text-center"><label class="form-label field__label">Анкета представителя</label></div>
+  </div>-->
+  <div class="row justify-content-around nuv-but">
+    <div class="col-3"><button type="button" class="btn btn-primary w-100 button button_color_grey" ng-click="ctrl.goBack();">Назад</button></div>
+    <div class="col-3"><button type="button" class="btn btn-primary w-100 button button_color_blue" ng-click="ctrl.goNext();">Далее</button></div>
+  </div>
+</div>

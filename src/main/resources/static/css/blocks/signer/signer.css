@@ -1,0 +1,8 @@
+.signer{
+    border-color: black;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin-bottom: 15px;
+}

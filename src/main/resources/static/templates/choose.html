@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <tr>
+      <th></th>
+      <th>ИМЯ</th>
+      <th>ИНН</th>
+      <th>ОГРН</th>
+      <th>СТАТУС</th>
+    </tr>
+    <tr ng-repeat="item in ctrl.getListArr">
+      <td><input name="group" ng-model="radio.value" ng-value="{inn:item.inn,ogrn:item.ogrn}" type="radio"></td>
+      <td>{{item.name}}</td>
+      <td>{{item.inn}}</td>
+      <td>{{item.ogrn}}</td>
+      <td>{{item.status}}</td>
+    </tr>
+  </table>
+  <input ng-click="ctrl.continueProc(radio.value.inn,radio.value.ogrn);" ng-disabled="radio.value==''" type="button"
+         value="Продолжить">
+</div>

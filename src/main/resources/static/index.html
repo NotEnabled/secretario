@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="application">
+<head>
+  <meta charset="UTF-8">
+  <title>Secretario</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body class="container root" ng-controller="appCtrl as rootCtrl" ng-cloak>
+
+<header class="header">
+  <div class="row border-bottom border-dark align-items-center header__up">
+    <div class="col-3"><img alt="ГазПромБанк" src="images/logo.svg"/></div>
+    <div class="col-md-5 text-md-start text-center"><h1 class="header__title-text">Юридическим лицам</h1></div>
+  </div>
+  <div class="row justify-content-center" style="background-color: #0057B6;">
+    <div class="col header__subtitle"><h2 class="text-center header__subtitle-text">Заключение зарплатного договора</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center" style="background-color: #0057B6; padding: 17px;">
+    <div class="col">
+      <div style="height: 25px; border-radius: 10px; overflow: visible;" class="progress">
+        <div aria-valuemax="100" ng-style="progStyle" style="border-radius: 10px;" aria-valuemin="0" aria-valuenow="50" class="progress-bar" role="progressbar"></div>
+        <div style=" margin-left: -23px;margin-top: -13px;width: 45px; height: 45px; display: inline-block; background-color: white;border-radius: 50%;border-style: solid; border-color: Navy;"><img src="images/logoCircle.svg"/></div>
+      </div>
+    </div>
+  </div>
+<!--  <hr>-->
+</header>
+<div ng-view></div>
+<script src="js/bootstrap/bootstrap.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-file-saver.bundle.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+
+<script src="js/application.js"></script>
+
+<script src="js/controller/anketaCtrl.js"></script>
+<script src="js/controller/appCtrl.js"></script>
+<script src="js/controller/chooseCtrl.js"></script>
+<script src="js/controller/chooseAddSignersCtrl.js"></script>
+<script src="js/controller/chooseSignerCtrl.js"></script>
+<script src="js/controller/contactsFormCtrl.js"></script>
+<script src="js/controller/contractConditions.js"></script>
+<script src="js/controller/docsCompleteCtrl.js"></script>
+<script src="js/controller/docsEditCtrl.js"></script>
+<script src="js/controller/docsPreviewCtrl.js"></script>
+<script src="js/controller/docsUploadCtrl.js"></script>
+<script src="js/controller/editFormCtrl.js"></script>
+<script src="js/controller/finalForm.js"></script>
+<script src="js/controller/FirstZpFormCtrl.js"></script>
+<script src="js/controller/isAcOwnCtrl.js"></script>
+<script src="js/controller/linkFormCtrl.js"></script>
+<script src="js/controller/searchCtrl.js"></script>
+<script src="js/controller/signersAddCtrl.js"></script>
+<script src="js/controller/signerSingleCtrl.js"></script>
+
+</body>
+</html>

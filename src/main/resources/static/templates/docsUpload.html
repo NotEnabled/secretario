@@ -1,0 +1,35 @@
+<div>
+  <div class="row desc">
+    <div class="col text-center"><p class="desc__text">Загрузка документов (по желанию)</p></div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div><p>Список необходимых документов для предоставления:</p></div>
+      <ul>
+        <li>1. Копия паспорта подписанта</li>
+        <li>2. Копия приказа о назначении подписанта</li>
+        <li>3. Копия паспорта дополнительного подписанта</li>
+        <li>4. Копия доверенности дополнительного подписанта</li>
+        <li>5. Копия приказа о назначении дополнительного подписанта</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center">
+    <div class="col-md-4 col-6">
+      <button class="btn btn-primary button button_color_blue" type="button" ng-click="ctrl.uploadDocs();">Загрузить документы для зарплатного договора</button>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-around nuv-but">
+    <div class="col-sm-3 col-5">
+      <button class="btn btn-primary w-100 button button_color_grey" type="button" ng-click="ctrl.goBackStep();">Назад</button>
+    </div>
+    <div class="col-sm-3 col-5">
+      <button class="btn btn-primary w-100 button button_color_blue" type="button" ng-click="ctrl.goNextStep();">Далее</button>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,17 @@
+<div>
+
+  <p>Подтверждение контактов для обратной связи</p>
+  <input class="form-control" ng-model="ctrl.data.tel" type="text">
+  <label class="form-label">Мобильный телефон</label>
+  <input class="form-control" ng-model="ctrl.data.email" type="text">
+  <label class="form-label">E-mail</label>
+  <input class="form-control" ng-model="ctrl.data.messanger" type="text">
+  <label class="form-label">Мессенджер (Skype, WhatsApp, Telegram)</label>
+  <input class="form-control" ng-model="ctrl.data.time" type="text">
+  <label class="form-label">Укажите удобное время для связи</label>
+
+  <div class="row justify-content-around nuv-but">
+    <div class="col-sm-3 col-5"><button class="btn btn-primary w-100 button button_color_grey" type="button" ng-click="ctrl.goBack();">Назад</button></div>
+    <div class="col-sm-3 col-5"><button type="button" class="btn btn-primary w-100 button button_color_blue" ng-click="ctrl.goNext();">Далее</button></div>
+  </div>
+</div>

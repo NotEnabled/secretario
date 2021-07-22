@@ -1,0 +1,5 @@
+.quest__answer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

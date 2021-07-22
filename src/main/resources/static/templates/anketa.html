@@ -1,0 +1,160 @@
+<div>
+  <div class="row desc">
+    <div class="col text-center"><p class="desc__text">Давайте познакомимся с Вами поближе!
+      Просим Вас ответить на несколько вопросов:</p></div>
+  </div>
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Как давно существует Ваша организация?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="orgTerm" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgTerm" type="radio" value="less1"><label class="quest__answer-label">менее 1 года</label></div>
+      <div class="quest__answer-item"><input name="orgTerm" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgTerm" type="radio" value="1to5"><label class="quest__answer-label">от 1 до 5 лет</label></div>
+      <div class="quest__answer-item"><input name="orgTerm" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgTerm" type="radio" value="more5"><label class="quest__answer-label">свыше 5 лет</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Численность работников организации</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="orgPeopleCnt" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgPeopleCnt" type="radio" value="less10"><label class="quest__answer-label">до 10 человек</label></div>
+      <div class="quest__answer-item"><input name="orgPeopleCnt" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgPeopleCnt" type="radio" value="10to50"><label class="quest__answer-label">10-50 человек</label></div>
+      <div class="quest__answer-item"><input name="orgPeopleCnt" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgPeopleCnt" type="radio" value="50to500"><label class="quest__answer-label">50-500 человек</label></div>
+      <div class="quest__answer-item"><input name="orgPeopleCnt" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgPeopleCnt" type="radio" value="more500"><label class="quest__answer-label">свыше 500 человек</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Тип организации</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="orgType" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgType" type="radio" value="comerc"><label class="quest__answer-label">некоммерческая</label></div>
+      <div class="quest__answer-item"><input name="orgType" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgType" type="radio" value="nocomerc"><label class="quest__answer-label">коммерческая</label></div>
+      <div class="quest__answer-item"><input name="orgType" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgType" type="radio" value="gov"><label class="quest__answer-label">с участием государства</label></div>
+      <div class="quest__answer-item"><input name="orgType" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgType" type="radio" value="ip"><label class="quest__answer-label">ИП</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Ваша организация оказывает образовательные услуги?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isEdu" class="form-check-input quest__checkbox" ng-model="ctrl.data.isEdu" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isEdu" class="form-check-input quest__checkbox" ng-model="ctrl.data.isEdu" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+    </div>
+  </div>
+
+  <div style="margin-top: 25px;" class="row justify-content-center field field_mg_sm">
+    <div class="col-sm-10 col"><input class="form-control" ng-model="ctrl.data.tel" type="text"></div>
+    <div class="w-100"></div>
+    <div class="col-sm-10 col text-center"><label class="form-label field__label">Укажите контактный мобильный телефон</label></div>
+  </div>
+
+  <div class="row justify-content-center field field_mg_sm">
+    <div class="col-sm-10 col"><input class="form-control" ng-model="ctrl.data.otherContacts" type="text"></div>
+    <div class="w-100"></div>
+    <div class="col-sm-10 col text-center"><label class="form-label field__label">Если хотите - Вы можете указать  и другие способы связаться с Вами</label></div>
+  </div>
+
+  <div class="row justify-content-center field field_mg_sm">
+    <div class="col-sm-10 col"><input class="form-control" ng-model="ctrl.data.zpModuleAdress" type="text"></div>
+    <div class="w-100"></div>
+    <div class="col-sm-10 col text-center"><label class="form-label field__label">Укажите фактический адрес установки Зарплатного модуля</label></div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Есть ли изменения в тех документах и сведениях, которые Вы предоставляли ранее при открытии предыдущих счетов?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isLastChangeDocs" class="form-check-input quest__checkbox" ng-model="ctrl.data.isLastChangeDocs" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isLastChangeDocs" class="form-check-input quest__checkbox" ng-model="ctrl.data.isLastChangeDocs" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isLastChangeDocs" class="form-check-input quest__checkbox" ng-model="ctrl.data.isLastChangeDocs" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Ваша организация обязана исполнять Федеральный закон «О закупках товаров, работ, услуг отдельными видами юридических лиц» от 18.07.2011 № 223-ФЗ?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isFZ223" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFZ223" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isFZ223" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFZ223" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isFZ223" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFZ223" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Ваша организация обязана исполнять Федеральный закон «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд» от 05.04.2013 № 44-ФЗ?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isFZ44" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFZ44" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isFZ44" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFZ44" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isFZ44" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFZ44" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Вы планируете осуществлять ввозить товары из Республики Беларусь или Республики Казахстан?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isKazah" class="form-check-input quest__checkbox" ng-model="ctrl.data.isKazah" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isKazah" class="form-check-input quest__checkbox" ng-model="ctrl.data.isKazah" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isKazah" class="form-check-input quest__checkbox" ng-model="ctrl.data.isKazah" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Вы намерены ввозить с/х продукцию из стран, которые ввели санкции против Российской Федерации?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isSH" class="form-check-input quest__checkbox" ng-model="ctrl.data.isSH" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isSH" class="form-check-input quest__checkbox" ng-model="ctrl.data.isSH" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isSH" class="form-check-input quest__checkbox" ng-model="ctrl.data.isSH" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Ваша организация является налоговым резидентом только России?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isResidentRF" class="form-check-input quest__checkbox" ng-model="ctrl.data.isResidentRF" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isResidentRF" class="form-check-input quest__checkbox" ng-model="ctrl.data.isResidentRF" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isResidentRF" class="form-check-input quest__checkbox" ng-model="ctrl.data.isResidentRF" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Ваша организация является финансовой организацией?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isFINorg" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFINorg" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isFINorg" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFINorg" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isFINorg" class="form-check-input quest__checkbox" ng-model="ctrl.data.isFINorg" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Какой вид доходов  преобладает у Вашей организации: активные или пассивные?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="orgBalanceMost" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgBalanceMost" type="radio" value="passive"><label class="quest__answer-label">пассивные</label></div>
+      <div class="quest__answer-item"><input name="orgBalanceMost" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgBalanceMost" type="radio" value="active"><label class="quest__answer-label">активные</label></div>
+      <div class="quest__answer-item"><input name="orgBalanceMost" class="form-check-input quest__checkbox" ng-model="ctrl.data.orgBalanceMost" type="radio" value="unknown"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div class="row quest" style="">
+    <div class="col-lg-8 quest__label"><p class="quest__label-text">Среди лиц, которым прямо/косвенно принадлежит более
+      10% уставного фонда Вашей организации, есть люди или организации, которые являются налоговыми резидентами США?</p>
+    </div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isUSResContain" class="form-check-input quest__checkbox" ng-model="ctrl.data.isUSResContain" type="radio" value="1"><label
+              class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isUSResContain" class="form-check-input quest__checkbox" ng-model="ctrl.data.isUSResContain" type="radio" value="0"><label
+              class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isUSResContain" class="form-check-input quest__checkbox" ng-model="ctrl.data.isUSResContain" type="radio" value="-1"><label
+              class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Среди лиц, которым прямо/косвенно принадлежит более 25% уставного фонда Вашей организации, есть люди, которые являются налоговыми резидентами других стран?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isResidentQuest" class="form-check-input quest__checkbox" ng-model="ctrl.data.isResidentQuest" type="radio" value="1"><label class="quest__answer-label">да</label></div>
+      <div class="quest__answer-item"><input name="isResidentQuest" class="form-check-input quest__checkbox" ng-model="ctrl.data.isResidentQuest" type="radio" value="0"><label class="quest__answer-label">нет</label></div>
+      <div class="quest__answer-item"><input name="isResidentQuest" class="form-check-input quest__checkbox" ng-model="ctrl.data.isResidentQuest" type="radio" value="-1"><label class="quest__answer-label">не знаю</label></div>
+    </div>
+  </div>
+
+  <div class="row justify-content-around nuv-but">
+    <div class="col-sm-3 col-5"><button type="button" class="btn btn-primary w-100 button button_color_grey" ng-click="ctrl.goBack();">Назад</button></div>
+    <div class="col-sm-3 col-5"><button type="button" class="btn btn-primary w-100 button button_color_blue" ng-click="ctrl.goNext();">Далее</button></div>
+  </div>
+</div>

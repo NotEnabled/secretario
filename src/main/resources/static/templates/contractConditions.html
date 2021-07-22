@@ -1,0 +1,66 @@
+<div>
+  <div class="row desc">
+    <div class="col text-center"><p class="desc__text">Теперь обсудим некоторые условия договора:</p></div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Какой тип банковских карт Вы хотите получить? (можно выбрать несколько вариантов)</p>
+    </div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input  ng-model="ctrl.data.cardTypeMir" class="form-check-input quest__checkbox" type="checkbox"><label class="quest__answer-label">карты "МИР"</label></div>
+      <div class="quest__answer-item"><input  ng-model="ctrl.data.cardTypeOthers" class="form-check-input quest__checkbox" type="checkbox"><label class="quest__answer-label">карты международных платежных систем (VISA, Maestro, Mastercard)</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Как Вы хотите оплачивать комиссионное вознаграждение?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isACown" ng-model="ctrl.data.isACown" class="form-check-input quest__checkbox" type="radio" value="1"><label class="quest__answer-label">со счёта в “Газпромбанке”</label></div>
+      <div class="quest__answer-item"><input name="isACown" ng-model="ctrl.data.isACown" class="form-check-input quest__checkbox" type="radio" value="0"><label class="quest__answer-label">со счета в другом банке</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Вы уже обсуждали с нашим специалистом размер комиссии?</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isCommisionDiscussed" ng-model="ctrl.data.isCommisionDiscussed" class="form-check-input quest__checkbox" type="radio" value="1"><label class="quest__answer-label">ДА</label></div>
+      <div class="quest__answer-item"><input name="isCommisionDiscussed" ng-model="ctrl.data.isCommisionDiscussed" class="form-check-input quest__checkbox" type="radio" value="0"><label class="quest__answer-label">НЕТ</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Кто будет получать банковские карты? (можно выбрать несколько вариантов)</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isCardReceiver" ng-model="ctrl.data.isCardReceiverHolder" class="form-check-input quest__checkbox" type="checkbox" value="holder"><label class="quest__answer-label">Держатели</label></div>
+      <div class="quest__answer-item"><input name="isCardReceiver" ng-model="ctrl.data.isCardReceiverHolderRepres" class="form-check-input quest__checkbox" type="checkbox" value="holderRepres"><label class="quest__answer-label">Представители Держателей</label></div>
+      <div class="quest__answer-item"><input name="isCardReceiver" ng-model="ctrl.data.isCardReceiverClientRepres" class="form-check-input quest__checkbox" type="checkbox" value="clientRepres"><label class="quest__answer-label">Предваритель Клиента</label></div>
+      <div class="quest__answer-item"><input name="isCardReceiver" ng-model="ctrl.data.isCardReceiverNotknow" class="form-check-input quest__checkbox" type="checkbox" value="notknow"><label class="quest__answer-label">Ещё не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label"><p class="quest__label-text">Кому Банк должен вернуть деньги с карт-счета в случае закрытия зарплатного проекта? (можно выбрать несколько вариантов)</p></div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isMoneyReturn" class="form-check-input quest__checkbox" ng-model="ctrl.data.isMoneyReturnHolder" type="checkbox" value="holder"><label class="quest__answer-label">Держателю</label></div>
+      <div class="quest__answer-item"><input name="isMoneyReturn" class="form-check-input quest__checkbox" ng-model="ctrl.data.isMoneyReturnHolderRepres" type="checkbox" value="holderRepres"><label class="quest__answer-label">Представителю Держателя</label></div>
+      <div class="quest__answer-item"><input name="isMoneyReturn" class="form-check-input quest__checkbox" ng-model="ctrl.data.isMoneyReturnAssignholder" type="checkbox" value="assignholder"><label class="quest__answer-label">Правопреемнику Держателя</label></div>
+      <div class="quest__answer-item"><input name="isMoneyReturn" class="form-check-input quest__checkbox" ng-model="ctrl.data.isMoneyReturnNotknow" type="checkbox" value="notknow"><label class="quest__answer-label">Ещё не знаю</label></div>
+    </div>
+  </div>
+
+  <div style="" class="row quest">
+    <div  class="col-lg-8 quest__label">
+      <p class="quest__label-text">Вы уже ознакомились с “Общими условиям оказания Банком ГПБ (АО) услуг по обслуживанию зарплатного проекта”?</p>
+      <div style=" align-self: flex-start; margin-top: 6px;"><img alt="info" style="height: 25px;width: 25px;" src="images/info-circle.svg"/></div>
+    </div>
+    <div class="col quest__answer-block">
+      <div class="quest__answer-item"><input name="isGeralTerms" class="form-check-input quest__checkbox" ng-model="ctrl.data.isGeralTerms" type="radio" value="1"><label class="quest__answer-label">ДА</label></div>
+      <div class="quest__answer-item"><input name="isGeralTerms" class="form-check-input quest__checkbox" ng-model="ctrl.data.isGeralTerms" type="radio" value="0"><label class="quest__answer-label">НЕТ</label></div>
+    </div>
+  </div>
+
+  <div class="row justify-content-around nuv-but">
+    <div class="col-sm-3 col-5"><button type="button" class="btn btn-primary w-100 button button_color_grey" ng-click="ctrl.goBack();">Назад</button></div>
+    <div class="col-sm-3 col-5"><button type="button" class="btn btn-primary w-100 button button_color_blue" ng-click="ctrl.goNext();">Далее</button></div>
+  </div>
+</div>
